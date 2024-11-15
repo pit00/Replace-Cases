@@ -1,8 +1,8 @@
 (function () {
     const vscode = acquireVsCodeApi();
 
-    let params = []
-    let text = ''
+    let params = [];
+    let text = '';
 
     window.addEventListener('message', event => {
         const message = event.data;
@@ -10,7 +10,7 @@
             case 'reScan': {
                 params = message.value;
                 text = message.editor;
-                updateScannerView(params, text)
+                updateScannerView(params, text);
                 break;
             } case 'getParams': {
                 params = message.value;
@@ -22,30 +22,30 @@
     function updateScannerView(params, text) {
         const ul = document.querySelector('.scanner-list');
         ul.textContent = '';
-        let keys = []
+        let keys = [];
         for (const param of params) {
-            keys.push(param.key)
+            keys.push(param.key);
         }
-        keys = [...new Set(keys)]
+        keys = [...new Set(keys)];
         for (const key of keys) {
             const count = text.split(key).length - 1;
             if (count > 0) {
                 const li = document.createElement('li');
-                li.className = 'scanner-entry'
+                li.className = 'scanner-entry';
 
                 const textK = document.createElement('div');
-                textK.innerHTML = key
-                li.appendChild(textK)
+                textK.innerHTML = key;
+                li.appendChild(textK);
                 const textC = document.createElement('div');
-                textC.innerHTML = '<span class="bubble">' + count + '</span>'
-                li.appendChild(textC)
+                textC.innerHTML = '<span class="bubble">' + count + '</span>';
+                li.appendChild(textC);
 
-                ul.appendChild(li)
+                ul.appendChild(li);
             }
         }
     }
 
     function getParams() {
-        vscode.postMessage({ type: 'getParams' })
+        vscode.postMessage({ type: 'getParams' });
     }
 }());

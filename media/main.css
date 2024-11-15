@@ -1,100 +1,100 @@
 body {
-	background-color: transparent;
+    background-color: transparent;
 }
 body.kv-explorer {
-	padding-top: 54px;
+    padding-top: 54px;
 }
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 .fixed-bar {
-	padding: 4px 4px 8px 4px;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: var(--vscode-menu-background);
+    padding: 4px 4px 8px 4px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--vscode-menu-background);
 }
 .fixed-bar > input {
-	min-height: 22px;
-	margin-bottom: 2px;
+    min-height: 22px;
+    margin-bottom: 2px;
 }
 .fixed-bar > button {
-	padding: 4px;
-	font-weight: 700;
+    padding: 4px;
+    font-weight: 700;
 }
 .header {
-	display: flex;
-	flex-wrap: nowrap;
-	padding: 4px 4px 0 4px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 4px 4px 0 4px;
 }
 .header > div {
-	width: 100%;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 11px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
 }
 .header .icon-filler {
-	width: 146px;
+    width: 146px;
 }
 ul.param-list,
 ul.scanner-list {
-	padding: 4px;
+    padding: 4px;
 }
 li.param-entry,
 li.scanner-entry {
-	display: flex;
-	flex-wrap: nowrap;
-	margin-bottom: 4px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 4px;
 }
 li.param-entry > input.inputG,
 li.param-entry > input.inputK,
 li.param-entry > input.inputV {
-	min-height: 22px;
-	width: 100%;
-	margin-right: 4px;
+    min-height: 22px;
+    width: 100%;
+    margin-right: 4px;
 }
 li.param-entry > button {
-	background-color: transparent;
-	width: 22px;
-	font-weight: normal;
-	color: var(--vscode-foreground);
-	transition: color 0.25s;
+    background-color: transparent;
+    width: 22px;
+    font-weight: normal;
+    color: var(--vscode-foreground);
+    transition: color 0.25s;
 }
 li.scanner-entry > div {
-	width: 100%;
+    width: 100%;
 }
 button.replaceBtn:hover {
-	color: rgb(27, 167, 27);
-	transition: color 0.25s;
+    color: rgb(27, 167, 27);
+    transition: color 0.25s;
 }
 button.clearBtn:hover {
-	color: rgb(197, 45, 45);
-	transition: color 0.25s;
+    color: rgb(197, 45, 45);
+    transition: color 0.25s;
 }
 .bubble {
-	display: inline-block;
-	background: var(--vscode-button-background);
-	color: #FFF;
-	min-width: 16px;
-	padding: 0 4px;
-	border-radius: 20px;
-	font-size: 10px;
-	line-height: 16px;
-	height: 16px;
-	margin-left: 4px;
-	text-align: center;
+    display: inline-block;
+    background: var(--vscode-button-background);
+    color: #FFF;
+    min-width: 16px;
+    padding: 0 4px;
+    border-radius: 20px;
+    font-size: 10px;
+    line-height: 16px;
+    height: 16px;
+    margin-left: 4px;
+    text-align: center;
 }
 .credit-footer {
-	width: 100%;
-	text-align: center;
-	font-size: 11px;
-	padding: 4px 0;
-	color: var(--vscode-foreground);
-	opacity: .25;
-	font-weight: 700;
-	transition: opacity 1s;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    padding: 4px 0;
+    color: var(--vscode-foreground);
+    opacity: .25;
+    font-weight: 700;
+    transition: opacity 1s;
 }
 .credit-footer:hover {
-	opacity: 1;
-	transition: opacity 1s;
+    opacity: 1;
+    transition: opacity 1s;
 }
